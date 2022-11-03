@@ -1,0 +1,40 @@
+{
+  "name": "acionamento_yamaha",
+  "version": "1.0.0",
+  "description": "Sistema de envio de Acionamentos o Banco Yamaha",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "NODE_ENV=teste node ./index.js"
+  },
+  "author": "Alison Nicolait",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.3",
+    "excel4node": "^1.8.0",
+    "moment-timezone": "^0.5.38",
+    "mssql": "^9.0.1",
+    "node-schedule": "^2.1.0"
+  },
+  "bin": {
+    "acionamento_yamaha": "index.js"
+  },
+  "pkg": {
+    "assets": [
+      "ArquivosGerados/**/*",
+      "api/**/*",
+      "aplicacao/**/*",
+      "arquivo/**/*",
+      "banco/**/*",
+      "config/**/*",
+      "configuracao/**/*"
+    ],
+    "target": [
+      "node7"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  }
+}
